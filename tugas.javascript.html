@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS keliling lingkaran</title>
+</head>
+<body>
+    <h2>Menghitung Luas Lingkaran</h2>
+    <input type="number" placeholder="Masukan nilai jari-jarinya :" id="luas">
+    <button onclick="hasil()">Hitung Luas lingkaran </button>
+    Hasil : <span id="hasilLuasLingkaran"></span>
+
+    <h2>Menghitung Keliling Lingkaran</h2>
+    <button onclick="hasil()">Hitung Keliling lingkaran </button>
+    Hasil : <span id="hasilKeliling"></span>
+    
+
+    <script>
+        function hasil() {
+            document.getElementById('hasilLuasLingkaran').innerHTML=3.14*parseFloat(Math.pow(luas.value,2));
+
+            document.getElementById('hasilKeliling').innerHTML=3.14*2*parseFloat(luas.value);
+        
+
+        }
+
+    </script>
+
+</body>
+</html>
